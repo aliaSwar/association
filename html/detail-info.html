@@ -113,16 +113,56 @@
 
             <!-- Layouts -->
             <li class="menu-item">
-              <a href="tables-basic.html" class="menu-link ">
-                <i class="bx bx-user"></i>
-          
-                <div data-i18n="Account Settings"> بيانات المكفولين</div>
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-user"></i>
+                <div data-i18n="Layouts">المدرجين</div>
               </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="tables-basic.html" class="menu-link">
+                    <div data-i18n="Without menu">عرض المدرجين</div>
+                  </a>
+
+                </li>
+                <li class="menu-item">
+                  <a href="add-modraj.html" class="menu-link">
+                    <div data-i18n="Without navbar">إضافة مدرج</div>
+                  </a>
+                </li>
+              </ul>
             </li>
+
             <li class="menu-item">
-              <a href="koflass.html" class="menu-link ">
-                <i class=" bx bxs-face"></i>
-                <div data-i18n="Account Settings">بيانات الكفلاء </div>
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons  bx bx-heart"></i>
+                <div data-i18n="Authentications">إعانات</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="auth-login-basic.html" class="menu-link" target="_blank">
+                    <div data-i18n="Basic">Login</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="auth-register-basic.html" class="menu-link" target="_blank">
+                    <div data-i18n="Basic">Register</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="auth-forgot-password-basic.html" class="menu-link" target="_blank">
+                    <div data-i18n="Basic">Forgot Password</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="menu-item">
+
+              <a href="javascript:void(0);" class="menu-link ">
+                <i class="menu-icon tf-icons bx bx bx-pause-circle"></i>
+                <div data-i18n="Account Settings"> غير النشطين</div>
               </a>
             </li>
 
@@ -130,27 +170,28 @@
             <li class="menu-item">
 
               <a href="javascript:void(0);" class="menu-link ">
-                <i class=" bx bxs-shopping-bag"></i>
-                <div data-i18n="Account Settings">إضافة كفالة</div>
-              </a>
-            </li>
-
-            <li class="menu-item">
-
-              <a href="add-Kafeel.html" class="menu-link ">
-                <i class="  bx bxs-user-plus"></i>
-                <div data-i18n="Account Settings">إضافة كفيل</div>
+                <i class="menu-icon tf-icons bx bx bx-time"></i>
+                <div data-i18n="Account Settings"> قيد الانتظار</div>
               </a>
             </li>
 
 
             <li class="menu-item">
-          
+
               <a href="javascript:void(0);" class="menu-link ">
-                <i class="    bx bxs-food-menu"></i>
-                <div data-i18n="Account Settings">عرض التقارير المالية</div>
+                <i class="menu-icon tf-icons bx bx bx-collection"></i>
+                <div data-i18n="Account Settings"> النواقص</div>
               </a>
-            </li> 
+            </li>
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link ">
+                <i class="menu-icon tf-icons bx bx bx-user-x"></i>
+                <div data-i18n="Account Settings"> المرفوضين</div>
+              </a>
+            </li>
+
+
           
             <!-- Components -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">other</span></li>
@@ -272,46 +313,161 @@
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr class="table-default">
-                        <td><i class="fab fa-sketch fa-lg text-warning "></i> <strong> الكافل الشهري</strong></td>
+                        <td><i class="fab fa-sketch fa-lg text-warning "></i> <strong>رقم الديوان</strong></td>
                         <td>Ronnie Shane</td>
                      
                       </tr>
                       <tr class="table-default">
-                        <td><i class="fab fa-react fa-lg text-info "></i> <strong> المبلغ </strong></td>
+                        <td><i class="fab fa-react fa-lg text-info "></i> <strong>مدة الإدراج </strong></td>
                         <td>Barry Hunter</td>
                         
                       </tr>
                       <tr class="table-default">
-                        <td><i class="fab fa-angular fa-lg text-danger "></i> <strong> الكافل السنوي</strong></td>
+                        <td><i class="fab fa-angular fa-lg text-danger "></i> <strong>تاريخ الإدراج</strong></td>
                         <td>Albert Cook</td>
                        
                       </tr>
                       <tr class="table-default">
-                        <td><i class="fab fa-vuejs fa-lg text-success"></i> <strong> المبلغ</strong></td>
+                        <td><i class="fab fa-vuejs fa-lg text-success"></i> <strong>تاريخ الانتهاء</strong></td>
                         <td>Trevor Baker</td>
                        
                       </tr>
                       <tr class="table-default">
                         <td>
-                          <i class="fab fa-bootstrap fa-lg text-primary "></i> <strong>  الهاتف</strong>
+                          <i class="fab fa-bootstrap fa-lg text-primary "></i> <strong> رقم القيد</strong>
                         </td>
                         <td>Jerry Milton</td>
                      
                         </td>
                       </tr>
                       <tr class="table-default">
-                        <td><i class="fab fa-sketch fa-lg text-warning "></i> <strong> عدد المدرجين</strong></td>
+                        <td><i class="fab fa-sketch fa-lg text-warning "></i> <strong> العنوان</strong></td>
                         <td>Sarah Banks</td>
                       
-      
+                      </tr>
+                      <tr class="table-default">
+                        <td><i class="fab fa-react fa-lg text-info"></i> <strong>رقم البطاقة الذكية </strong></td>
+                        <td>Ted Richer</td>
+                    
+                      </tr>
+                      <tr class="table-default">
+                        <td>
+                          <i class="fab fa-bootstrap fa-lg text-primary "></i> <strong>راتب الإدراج </strong>
+                        </td>
+                        <td>Perry Parker</td>
                      
                   
                     </tbody>
                   </table>
                 </div>
               </div>
+
+
               <hr class="my-5" />
                 <!-- Contextual Classes -->
+
+                <div class="card text-bg-warning mb-3">
+                  <h5 class="card-header" >معلومات عن الزوج  </h5>
+                  <div class="table-responsive text-nowrap">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th  class="table-success ">المعلومات </th>
+                          <th  class="table-success "> المعلومات</th>
+                     
+  
+                        </tr>
+                      </thead>
+                      <tbody class="table-border-bottom-0">
+                        <tr class="table-default">
+                          <td><i class="fab fa-sketch fa-lg text-warning "></i> <strong>الاسم  </strong></td>
+                          <td>Ronnie Shane</td>
+                       
+                        </tr>
+                        <tr class="table-default">
+                          <td><i class="fab fa-react fa-lg text-info "></i> <strong>الرقم الوطني   </strong></td>
+                          <td>Barry Hunter</td>
+                          
+                        </tr>
+                        <tr class="table-default">
+                          <td><i class="fab fa-angular fa-lg text-danger "></i> <strong>عدد الأطفال</strong></td>
+                          <td>Albert Cook</td>
+                         
+                        </tr>
+                        <tr class="table-default">
+                          <td><i class="fab fa-vuejs fa-lg text-success"></i> <strong>الوضع العائلي </strong></td>
+                          <td>Trevor Baker</td>
+                         
+                        </tr>
+                        <tr class="table-default">
+                          <td>
+                            <i class="fab fa-bootstrap fa-lg text-primary "></i> <strong>  المواليد </strong>
+                          </td>
+                          <td>Jerry Milton</td>
+                       
+                          </td>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+  
+              <!--/ Contextual Classes -->
+
+
+              <hr class="my-5" />
+
+                   <!-- Contextual Classes -->
+
+                   <div class="card text-bg-warning mb-3">
+                    <h5 class="card-header" >معلومات عن الزوجة  </h5>
+                    <div class="table-responsive text-nowrap">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th  class="table-danger ">المعلومات </th>
+                            <th  class="table-danger ">المعلومات </th>
+                       
+    
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                          <tr class="table-default">
+                            <td><i class="fab fa-sketch fa-lg text-warning "></i> <strong>الاسم  </strong></td>
+                            <td>Ronnie Shane</td>
+                         
+                          </tr>
+                          <tr class="table-default">
+                            <td><i class="fab fa-react fa-lg text-info "></i> <strong>الرقم الوطني   </strong></td>
+                            <td>Barry Hunter</td>
+                            
+                          </tr>
+                          <tr class="table-default">
+                            <td><i class="fab fa-angular fa-lg text-danger "></i> <strong>عدد الأطفال</strong></td>
+                            <td>Albert Cook</td>
+                           
+                          </tr>
+                          <tr class="table-default">
+                            <td><i class="fab fa-vuejs fa-lg text-success"></i> <strong>الوضع العائلي </strong></td>
+                            <td>Trevor Baker</td>
+                           
+                          </tr>
+                          <tr class="table-default">
+                            <td>
+                              <i class="fab fa-bootstrap fa-lg text-primary "></i> <strong>  المواليد </strong>
+                            </td>
+                            <td>Jerry Milton</td>
+                         
+                            </td>
+                        
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+    
+                <!--/ Contextual Classes -->
+                <hr class="my-5" />
+
             <div class="card text-bg-warning mb-3">
               <h5 class="card-header" >الطفل الأول   </h5>
               <div class="table-responsive text-nowrap">
@@ -336,26 +492,11 @@
                       
                     </tr>
                     <tr class="table-default">
-                      <td><i class="fab fa-angular fa-lg text-danger "> </i> <strong> التحصيل العلمي</strong></td>
+                      <td><i class="fab fa-angular fa-lg text-danger "> </i> <strong> الصف</strong></td>
                       <td>Albert Cook</td>
                      
                     </tr>
-
-                    <tr class="table-default">
-                      <td><i class="fab fa-angular fa-lg text-danger "> </i> <strong>  قيمة الكفالة</strong></td>
-                      <td>Albert Cook</td>
-                     
-                    </tr>
-                    <tr class="table-default">
-                      <td><i class="fab fa-angular fa-lg text-danger "> </i> <strong>   مجموع قيمة الكفالة</strong></td>
-                      <td>Albert Cook</td>
-                     
-                    </tr>
-                    <tr class="table-default">
-                      <td><i class="fab fa-angular fa-lg text-danger "> </i> <strong>     الراتب الكاملمع الجمعية</strong></td>
-                      <td>Albert Cook</td>
-                     
-                    </tr>
+                  
                 
                   </tbody>
                 </table>

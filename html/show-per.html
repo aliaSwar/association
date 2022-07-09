@@ -177,21 +177,27 @@
         </li>
       </ul>
     </li>
+
     <li class="menu-item">
-      <a href="show-per.html" class="menu-link ">
-        <i class="menu-icon tf-icons   bx bx-slider-alt"></i>
-
-        <div data-i18n="Account Settings"> الصلاحيات</div>
-      </a>
-
-    
-  <li class="menu-item">
-  <a href="show-roole.html" class="menu-link ">
-    <i class="menu-icon tf-icons   bx bx-task"></i>
-    <div data-i18n="Account Settings"> الوظائف</div>
-  </a>
+        <a href="show-per.html" class="menu-link ">
+          <i class="menu-icon tf-icons   bx bx-slider-alt"></i>
+  
+          <div data-i18n="Account Settings"> الصلاحيات</div>
+        </a>
+  
+      
+    <li class="menu-item">
+    <a href="show-roole.html" class="menu-link ">
+      <i class="menu-icon tf-icons   bx bx-task"></i>
+      <div data-i18n="Account Settings"> الوظائف</div>
+    </a>
 
    
+         
+         
+
+      </ul>
+  </li>
  
 
 
@@ -204,86 +210,7 @@
             
 
         <!-- nav----------------------------------------------- -->
-        <nav class="navbar bg-light fixed-top" id="nav-boushra">
-          <div class="container-fluid">
-            <img id="kk" src="../image/logoo.png" class="app-brand" width="40pt" height="40pt" >
-
-            <a class="navbar-brand" href="#">  جمعية إنعاش الفقير الخيرية| قسم الإدارة </a>
-           
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li >
-               
-                    <a class="nav-link active" aria-current="page" href="#">
-                     <div>
-                      <span class=" bx bx-user-check "></span>
-                      <div >الأوراق الثبوتية</div>
-                     </div>
-                    </a>
-
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                      <li>
-                        <i class=" bx bxs-file"></i>
-                        <a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-
-
-                  <li class="nav-item">
-                    <a href="javascript:void(0);" class="nav-link nav-toggle">
-                        <i class=" tf-icons  bx bx-adjust"></i>
-                        <div data-i18n="Authentications">الفئات</div>
-                    </a>
-                    <ul class="nav-sub">
-                        <li class="nav-item">
-                            <a href="{{ route('financials.create') }}" class="nav-link">
-                                <div data-i18n="Basic">اضافة فئة</div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('financials.index') }}" class="nav-link">
-                                <div data-i18n="Basic">عرض الفئات</div>
-                            </a>
-                        </li>
-              
-                    </ul>
-                </li>
-
-
-
-
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-
-                
-            
-              
-              </div>
-            </div>
-          </div>
-        </nav>
+    
 
                 <!-- nav----------------------------------------------- -->
 
@@ -332,31 +259,17 @@
                 <table class="table tables-basic tables-basic" >
                   <thead>
                     <tr>
-                      <th class="table-success ">اسم الموظف</th>
-                      <th class="table-success ">صلاحيات الموظف</th>
-                      <th class="table-success "> الهاتف</th>
-                      <th class="table-success ">تعديل </th>
+                      <th class="table-success "> الصلاحية</th>
+                      <th class="table-success "> نوع الموظف</th>
+                      <th class="table-success "> تعديل</th>
+                     
                     </tr>
                   </thead>
                   <tbody id="myTable">
                     <tr>
-                      <td>بشرى صالح</td>
-                      <td>
-                        <div class="dropdown">
-                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                            <i class=" bx bx-list-ol"></i>
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="detail-info.html"
-                              ><i class=" bx bx-radio-circle-marked"></i>  إضافة إعانة</a
-                            > 
-                            <a class="dropdown-item" href="javascript:void(0);"
-                              ><i class=" bx bx-radio-circle-marked"></i> إضافة مدرج</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-label-success me-1"></span>5923456</td>
+                      <td> إضافة إعانة</td>
+                     
+                      <td><span class="badge bg-label-success me-1"></span>موظف قسم الإدراج</td>
                       
                       <td>
                         <div class="dropdown">
@@ -365,9 +278,7 @@
                           </button>
                           <div class="dropdown-menu">
                         
-                            <a class="dropdown-item" href="edit.html"
-                              ><i class=" bx bx-pencil"></i> تعديل</a
-                            >
+                            
                             <a class="dropdown-item"
                             ><i class="  bx bx-x-circle"></i> حذف</a
                           >
@@ -377,23 +288,9 @@
                     </tr>
                  
                     <tr>
-                      <td>رغد صالح</td>
-                      <td>
-                        <div class="dropdown">
-                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                            <i class=" bx bx-list-ol"></i>
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item"
-                              ><i class=" bx bx-radio-circle-marked"></i>  إضافة إعانة</a
-                            > 
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i> إضافة مدرج</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-label-success me-1"></span>5923456</td>
+                      <td> إضافة مدرج</td>
+                     
+                      <td><span class="badge bg-label-success me-1"></span> موظف قسم الإدراج</td>
                       
                       <td>
                         <div class="dropdown">
@@ -402,9 +299,6 @@
                           </button>
                           <div class="dropdown-menu">
                         
-                            <a class="dropdown-item" href="edit.html"
-                              ><i class=" bx bx-pencil"></i> تعديل</a
-                            >
                             <a class="dropdown-item"
                             ><i class="  bx bx-x-circle"></i> حذف</a
                           >
@@ -414,23 +308,9 @@
                     </tr>
                  
                     <tr>
-                      <td>حمزة صالح</td>
-                      <td>
-                        <div class="dropdown">
-                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                            <i class=" bx bx-list-ol"></i>
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i>  إضافة إعانة</a
-                            > 
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i> إضافة مدرج</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-label-success me-1"></span>5923456</td>
+                      <td> الاوراق الثبوتية</td>
+                     
+                      <td><span class="badge bg-label-success me-1"></span>موظف قسم الإدراج</td>
                       
                       <td>
                         <div class="dropdown">
@@ -439,38 +319,19 @@
                           </button>
                           <div class="dropdown-menu">
                         
-                            <a class="dropdown-item" href="edit.html"
-                              ><i class=" bx bx-pencil"></i> تعديل</a
-                            >
-                            <a class="dropdown-item" 
+                            <a class="dropdown-item"
                             ><i class="  bx bx-x-circle"></i> حذف</a
                           >
+                         
                           </div>
                         </div>
                       </td>
                     </tr>
               
                     <tr>
-                      <td>أحمد السحلي </td>
-                      <td>
-                        <div class="dropdown">
-                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                            <i class=" bx bx-list-ol"></i>
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i>  إضافة إعانة</a
-                            > 
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i> إضافة مدرج</a
-                            >
-                            <a class="dropdown-item"
-                            ><i class=" bx bx-radio-circle-marked"></i>  عرض المدرجين</a
-                          >
-                          </div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-label-success me-1"></span>5923456</td>
+                      <td> الأوراق الثبوتية </td>
+                      
+                      <td><span class="badge bg-label-success me-1"></span>موظف قسم الإدراج الطبي</td>
                       
                       <td>
                         <div class="dropdown">
@@ -479,38 +340,19 @@
                           </button>
                           <div class="dropdown-menu">
                         
-                            <a class="dropdown-item" href="edit.html"
-                              ><i class=" bx bx-pencil"></i> تعديل</a
-                            >
-                            <a class="dropdown-item" 
+                            <a class="dropdown-item"
                             ><i class="  bx bx-x-circle"></i> حذف</a
                           >
+                          
                           </div>
                         </div>
                       </td>
                     </tr>
                     
                     <tr>
-                      <td>  براء صالح</td>
-                      <td>
-                        <div class="dropdown">
-                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                            <i class=" bx bx-list-ol"></i>
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i>  إضافة إعانة</a
-                            > 
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i> إضافة مدرج</a
-                            >
-                            <a class="dropdown-item"
-                            ><i class=" bx bx-radio-circle-marked"></i>  عرض المدرجين</a
-                          >
-                          </div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-label-success me-1"></span>5923456</td>
+                      <td>   الاطلاع على المدرجين</td>
+                    
+                      <td><span class="badge bg-label-success me-1"></span>موظف قسم الإدراج</td>
                       
                       <td>
                         <div class="dropdown">
@@ -519,38 +361,19 @@
                           </button>
                           <div class="dropdown-menu">
                         
-                            <a class="dropdown-item" href="edit.html"
-                              ><i class=" bx bx-pencil"></i> تعديل</a
-                            >
-                            <a class="dropdown-item" 
+                            <a class="dropdown-item"
                             ><i class="  bx bx-x-circle"></i> حذف</a
                           >
+                          
                           </div>
                         </div>
                       </td>
                     </tr>
                     
                     <tr>
-                      <td>عبدالمعين صالح  </td>
-                      <td>
-                        <div class="dropdown">
-                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                            <i class=" bx bx-list-ol"></i>
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i>  إضافة إعانة</a
-                            > 
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i> إضافة مدرج</a
-                            >
-                            <a class="dropdown-item"
-                            ><i class=" bx bx-radio-circle-marked"></i>  عرض المدرجين</a
-                          >
-                          </div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-label-success me-1"></span>5923456</td>
+                      <td> إضافةكفالة  </td>
+                  
+                      <td><span class="badge bg-label-success me-1"></span>موظف قسم الكفالات</td>
                       
                       <td>
                         <div class="dropdown">
@@ -559,38 +382,19 @@
                           </button>
                           <div class="dropdown-menu">
                         
-                            <a class="dropdown-item" href="edit.html"
-                              ><i class=" bx bx-pencil"></i> تعديل</a
-                            >
-                            <a class="dropdown-item" 
+                            <a class="dropdown-item"
                             ><i class="  bx bx-x-circle"></i> حذف</a
                           >
+                           
                           </div>
                         </div>
                       </td>
                     </tr>
                     
                     <tr>
-                      <td> يوسف صالح </td>
-                      <td>
-                        <div class="dropdown">
-                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                            <i class=" bx bx-list-ol"></i>
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i>  إضافة إعانة</a
-                            > 
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i> إضافة مدرج</a
-                            >
-                            <a class="dropdown-item"
-                            ><i class=" bx bx-radio-circle-marked"></i>  عرض المدرجين</a
-                          >
-                          </div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-label-success me-1"></span>5923456</td>
+                      <td>  حذف مدرج </td>
+                    
+                      <td><span class="badge bg-label-success me-1"></span>موظف قسم الادراج</td>
                       
                       <td>
                         <div class="dropdown">
@@ -599,38 +403,19 @@
                           </button>
                           <div class="dropdown-menu">
                         
-                            <a class="dropdown-item" href="edit.html"
-                              ><i class=" bx bx-pencil"></i> تعديل</a
-                            >
-                            <a class="dropdown-item" 
+                            <a class="dropdown-item"
                             ><i class="  bx bx-x-circle"></i> حذف</a
                           >
+                          
                           </div>
                         </div>
                       </td>
                     </tr>
                     
                     <tr>
-                      <td>أويس صالح  </td>
-                      <td>
-                        <div class="dropdown">
-                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                            <i class=" bx bx-list-ol"></i>
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i>  إضافة إعانة</a
-                            > 
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i> إضافة مدرج</a
-                            >
-                            <a class="dropdown-item"
-                            ><i class=" bx bx-radio-circle-marked"></i>  عرض المدرجين</a
-                          >
-                          </div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-label-success me-1"></span>5923456</td>
+                      <td> حذف مدرج  </td>
+                     
+                      <td><span class="badge bg-label-success me-1"></span>موظف قسم الإدراج الطبي</td>
                       
                       <td>
                         <div class="dropdown">
@@ -639,38 +424,19 @@
                           </button>
                           <div class="dropdown-menu">
                         
-                            <a class="dropdown-item" href="edit.html"
-                              ><i class=" bx bx-pencil"></i> تعديل</a
-                            >
-                            <a class="dropdown-item" 
+                            <a class="dropdown-item"
                             ><i class="  bx bx-x-circle"></i> حذف</a
                           >
+                          
                           </div>
                         </div>
                       </td>
                     </tr>
                     
                     <tr>
-                      <td> ندى برمو </td>
-                      <td>
-                        <div class="dropdown">
-                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                            <i class=" bx bx-list-ol"></i>
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i>  إضافة إعانة</a
-                            > 
-                            <a class="dropdown-item" 
-                              ><i class=" bx bx-radio-circle-marked"></i> إضافة مدرج</a
-                            >
-                            <a class="dropdown-item"
-                            ><i class=" bx bx-radio-circle-marked"></i>  عرض المدرجين</a
-                          >
-                          </div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-label-success me-1"></span>5923456</td>
+                      <td>  إضافة كفيل </td>
+                     
+                      <td><span class="badge bg-label-success me-1"></span>موظف قسم الكفالات</td>
                       
                       <td>
                         <div class="dropdown">
@@ -679,12 +445,10 @@
                           </button>
                           <div class="dropdown-menu">
                         
-                            <a class="dropdown-item" href="edit.html"
-                              ><i class=" bx bx-pencil"></i> تعديل</a
-                            >
-                            <a class="dropdown-item" 
+                            <a class="dropdown-item"
                             ><i class="  bx bx-x-circle"></i> حذف</a
                           >
+                          
                           </div>
                         </div>
                       </td>
@@ -701,13 +465,57 @@
                     <tr>
                   </tbody>
                 </table>
+
+               <!-- Vertically centered modal -->
+      
               </div>
+              <button id="add" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> إضافة صلاحية جديدة :)</button>
+
+               
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">أضف صلاية جديدة </h5>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">الصلاحية:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom04" class="form-label" id="rule"> نوع الموظف القادر على القيام بهذه الصلاحية :</label>
+                            <select class="form-select" id="validationCustom04" required>
+                              <option selected disabled value="">...اختر</option>
+                              <option>   </option>
+                        
+                              <option>موظف في قسم الإدراج</option>
+                              <option>مدير في قسم الإدراج</option>
+                              <option>موظف في قسم الإدراج الطبي</option>
+                              <option>مدير في قسم الإدراج الطبي</option>
+                              <option>موظف في قسم الكفالات</option>
+                              <option> مدير في قسك الكفالات</option>
+                            
+                            </select>
+                            <div class="invalid-feedback">
+                              Please select a valid state.
+                            </div>
+                          </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                      <button type="button" class="btn btn-primary">حفظ </button>
+                    </div>
+                  </div>
+                </div>
               </div>
                 </div>
               </section>
              
             <!-- / Content -->
-<img id="image-emp" src="../image/emp.png" alt="employee" width="600pt"  >
+<img id="image-emp" src="../image/m.png" alt="employee" width="600pt"  >
         
 
             <div class="content-backdrop fade"></div>
@@ -719,10 +527,12 @@
 
       <!-- Overlay -->
       <div class="layout-overlay layout-menu-toggle"></div>
+      
     </div>
     <!-- / Layout wrapper -->
 
-  
+ 
+      
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -748,3 +558,4 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
+
